@@ -1,13 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
-import postsReducer from '../features/posts/postsSlice'
-import platformsReducer from '../features/platforms/platformsSlice'
-import draftsReducer from '../features/drafts/draftsSlice'
+import assignmentsReducer from '../features/assignments/assignmentsSlice'
+import authReducer from '../features/auth/authSlice'
+import subjectsReducer from '../features/subjects/subjectsSlice'
+import usersReducer from '../features/users/usersSlice'
 
 export const store = configureStore({
   reducer: {
-    posts: postsReducer,
-    platforms: platformsReducer,
-    drafts: draftsReducer,
+    assignments: assignmentsReducer,
+    auth: authReducer,
+    subjects: subjectsReducer,
+    users: usersReducer,
   },
 })
 
